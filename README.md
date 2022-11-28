@@ -142,13 +142,7 @@ being returned from our component:
 <form onSubmit={handleSubmit}>
   {/* rest of form elements here... */}
 
-  {errors.length > 0 && (
-    <ul style={{ color: "red" }}>
-      {errors.map((error) => (
-        <li key={error}>{error}</li>
-      ))}
-    </ul>
-  )}
+
   <SubmitButton type="submit">Add Movie</SubmitButton>
 </form>
 ```
